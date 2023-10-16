@@ -90,20 +90,20 @@ footer{
     background-image: url(bg.jpg);
     padding: 15px 0px;
 }
+
 .redes a{
     margin: 0 10px;
-    text-transform: none;
-
+    text-decoration: none;
 }
 
-.rede img:hover{
+.redes  img:hover{
     transition: 0.5s;
-    transform: scale(1.1);
+    transform: scale(1.5);
     opacity: 60%;
 }
 
-.copyringht{
-    font-size: 13;
+.copyright{
+    font-size: 13px;
     color:white;
     margin-top: 15px;
 }
