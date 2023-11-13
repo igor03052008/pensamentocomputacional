@@ -38,54 +38,78 @@
         <form>
             <p>Os campos com * são obrigatórios!</p>
             <label for="nomecompleto">Nome Completo*</label>
-            <input class="input-padrao" type="text" id="nomecompleto"required
+            <input class="input-padrao" type="text" id="nomecompleto" required
             placeholder="Nome e Sobrenome">
 
-            <label for="telefone"></label>
-            <input class="input-padrao" type="tel" id="email"required
+            <label for="email">Email*</label>
+            <input class="input-padrao" type="email" id="email" required
             placeholder="seuemail@dominio.com">
 
-            <label for="telefone">-Telefone</label>
-            <input class="input-padrao" type="tel" id="email"required
+            <label for="telefone">Telefone</label>
+            <input class="input-padrao" type="tel" id="email" required
             placeholder="(xx) xxxxx-xxxx">
 
             <label for="mesagem">Mensagem</label>
             <textarea cols="70" rows="5" id="Mensagem"
-            placeholder="Ex.: Gostaria de agendar um corete de cabelo e barbearia
+            placeholder="Ex.: Gostaria de agendar um corte de cabelo e barbearia
             para o próximo sábado."></textarea>
 
             <fieldset>
-            <legend>Em qual horário prefere seu atendimento?</legend>
-            <select>
-                <option>Manhã</option>
-                <option>Tarde</option>
-                <option>Noite</option>
-            </select>
-        </fieldset>
+                <legend>Em qual horário prefere seu atendimento?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
 
-        <fieldset>
-            <legend>Como prefere o nosso contato?</legend>
-            <label for="radio-email">
-                <input type="radio" name="contato" value="email" id="radio-email">
-                Email
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    Email
+                </label>
+
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    Whatsapp
+                </label>
+            </fieldset>
+            <label class="checkbox"> Gostaria de receber nossas novidades por email?
+            <input type="checkbox" checked>
             </label>
 
-            <label for="radio-telefone">
-                <input type="radio" name="contato" value="telefone" id="radio-telefone">
-                Telefone
-            </label>
+            <input clas="enviar" type="submit" value="Enviar">
+        
+        </form>
 
-            <label for="radio-whatsapp">
-                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
-                whatsapp
-            </label>
-        </fieldset>
-<label class="checkbox">Gostaria de receber nossas novidades por email?
-    <input type="checkbox" checked>
-</label>
-
-<input clas="enviar" type="submit"  value="Enviar">
-
+        <table>
+            <thead>
+                <th>Dias</th>
+                <th>horários</th>
+            </thead>
+        
+        <tbody>
+            <tr>
+                <td>Terça á Sexta</td>
+                <td>Das 8h ás 20h</td>
+            </tr>
+            <tr>
+                <td>Sábado e Domingos</td>
+                <td>Das 9h ás 18h</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Estamos te esperando!</td>
+            </tr>
+        </tfoot>
+    </table>
     </main>
 
 </body>
